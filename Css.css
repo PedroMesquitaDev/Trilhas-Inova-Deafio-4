@@ -1,0 +1,182 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.container{
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    width: 90%;
+    height: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+.logo{
+    width: 150px;
+    margin-bottom: 20px;
+}
+  
+h1{
+    font-size: 22px;
+    color: #003c50;
+    margin-bottom: 10px;
+}
+
+.container h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #003c50;
+    margin-bottom: 20px;
+  }
+  
+.subtitulo{
+    color: #006a8a;
+    font-size: 14px;
+    margin-bottom: 60px;
+}
+  
+button{
+    background-color: #003c80;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+button:hover{
+    background-color: #0055aa;
+}
+
+
+/*esconde a div*/
+.hidden{
+    display: none;
+}
+
+#selectCidade{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 30px auto;
+}
+
+#selectCidade select{
+    width: 100%;
+    padding: 12px 45px 12px 15px;
+    border: none;
+    border-radius: 16px;
+    background-color: #e3ecec;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    appearance: none; /* remove o estilo padrão */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+/* CSS Inicio */
+
+#telaDois{
+    align-items: center;
+
+}
+.cabecalho {
+  display:flex;
+  justify-content: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #003c50;
+  font-weight: bold;
+}
+
+.cabecalho p{
+  padding-right: 3rem;
+  padding-top: 1rem;
+}
+
+.cabecalho img{
+  height: 5%;
+  width: 5%;
+}
+
+.titulo-servicos {
+  font-size: 20px;
+  color: #003c50;
+  margin-bottom: 20px;
+}
+
+
+.campo-busca {
+  position: relative;
+  margin: 20px 0;
+}
+
+.campo-busca input {
+  width: 50%;
+  padding: 12px 45px 12px 15px;
+  border: none;
+  border-radius: 16px;
+  background-color: #e3ecec;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+}
+
+.grade-servicos {
+  width: 50%;
+  margin: 30px auto; 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.botao-servico {
+  width: 100%;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 14px;
+  color: #0c3c69;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.botao-servico:hover {
+  background-color: #e0e0e0;
+}
+
+.botao-noticias {
+  padding: left;
+}
+
+.botao-noticias:hover {
+  background-color: #0055aa;
+}
+
+#house{
+    padding-top: 5rem;
+}
+#house button{
+    width: 50%;
+}
+

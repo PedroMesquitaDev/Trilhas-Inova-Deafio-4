@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Cidadão</title>
+    <link rel="stylesheet" href="Css.css" />
+</head>
+<body>
+    <div class="container">
+        <div id="telaUm" class=""> 
+          <img src="IMG/Logo.png" alt="Logo InfoCidadão" class="logo" />
+
+          <!-- tela inicial onde somente se clica no botão começar-->
+          <div id="bemVindo" class="">
+            <h1>INFO CIDADÃO</h1>
+            <p class="subtitulo">Todas as informações da sua cidade na sua tela</p>
+
+            <!-- botão deve adcionar hidden nessa div(id=bemVindo) e tirar o da div(id=selectCidade) -->
+            <button>Começar</button>
+          </div>
+          
+          <!-- Segunda tela onde se escolhe o municipio-->
+          <div id="selectCidade" class="hidden">
+            <h2>Escolha seu município</h2>
+            <select id="cidade">
+                <option disabled selected>Selecione uma cidade</option>
+                <option value="Cidade1">Cidade1</option>
+                <option value="Cidade2">Cidade2</option>
+                <option value="Cidade3">Cidade3</option>    
+            </select>
+            
+            <!-- Pega o valor de Cidade-->
+            <button>Usar cidade</button>
+            <!-- botão deve adcionar hidden na div(id=telaUm) e tirar o da div(id=telaDois) e div(id=house)-->
+          </div>
+        </div>
+
+        <!-- Tela três selecionar o serviço--> 
+        <div id="telaDois" class="hidden">
+          <header class="cabecalho">
+            <img src="IMG/Logo.png" alt="">
+            <p>App <br><strong>InfoCidadão</strong></p>
+            <p>Cidade:<br> nome</strong></p>
+          </header>
+
+          <h2 class="titulo-servicos">Serviços de Cidade nome</span></h2>
+
+          <div class="campo-busca">
+            <input type="text" id="busca" placeholder="Buscar palavra-chave">
+          </div>
+
+          <div class="grade-servicos">
+            <!-- botão deve adcionar hidden na div(id=telaDois) e tirar o da div(id=servicoSaude)-->
+            <button class="botao-servico">🏥<br>Saúde</button>
+            <!-- botão deve adcionar hidden na div(id=telaDois) e tirar o da div(id=servicoEducacao)-->
+            <button class="botao-servico">📚<br>Educação</button>
+            <!-- botão deve adcionar hidden na div(id=telaDois) e tirar o da div(id=servicoEmergencia)-->
+            <button class="botao-servico">🚨<br>Emergência</button>
+            <!-- botão deve adcionar hidden na div(id=telaDois) e tirar o da div(id=servicoSocial)-->
+            <button class="botao-servico">🤝<br>Assistência Social</button>
+            <!-- botão deve adcionar hidden na div(id=telaDois) e tirar o da div(id=servicoPrefeitura)-->
+            <button class="botao-servico">🏛️<br>Serviços da Prefeitura</button>
+            <!-- botão deve adcionar hidden na div(id=telaDois) e tirar o da div(id=servicoMapa)-->
+            <button class="botao-servico">🗺️<br>Mapa da Cidade</button>
+          </div>
+
+          <button class="botao-noticias">Ver Notícias</button>
+        </div>
+
+        <div class="servicos">
+          <!-- Tela serviço de Saúde-->
+          <div id="servicoSaude">
+
+          </div>
+          <!-- Tela serviço de Educação-->
+          <div id="servicoEducacao" class="hidden">
+
+          </div>
+          <!-- Tela serviço de Emergência-->
+          <div id="servicoEmergencia" class="hidden">
+
+          </div>
+          <!-- Tela serviço de Assistencia Social-->
+          <div id="servicoSocial" class="hidden">
+
+          </div>
+          <!-- Tela serviço da Prefeitura-->
+          <div id="servicoPrefeitura" class="hidden">
+
+          </div>
+          <!-- Tela serviço de Mapa da cidade-->
+          <div id="servicoMapa">
+
+          </div>
+        </div>
+        
+
+        <!-- volta para SelectCidade (tela 1 parte 2)-->
+        <div id="house" class="hidden">
+          <button class=" ">🏠</button>
+        </div>
+    </div>
+</body>
+</html>
