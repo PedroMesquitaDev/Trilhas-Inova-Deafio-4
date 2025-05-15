@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css"/>
+
+    <title>InfoCidadão</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- cabeçalho das páginas-->
+        <div id="cabecalhoDiv" class="">
+          <header class="cabecalho">
+            <img src="imagens/logo.png" alt="">
+            <p>App <br><strong>InfoCidadão</strong></p>
+            <p>Cidade:<br> nome</strong></p>
+          </header>
+        </div>
+        
+        <!-- Tela três selecionar o serviço--> 
+        <div id="telaDois">
+          
+          <h2 class="titulo-servicos">Serviços de Cidade nome</span></h2>
+
+          <div class="campo-busca">
+            <input type="text" id="busca" placeholder="Buscar palavra-chave">
+          </div>
+
+          <div class="grade-servicos">
+            <!-- botão deve adcionar hidden na div(id=telaDois) e tirar o da div(id=servicoSaude)-->
+            <button class="botao-servico">🏥<br>Saúde</button>
+            <!-- botão deve adcionar hidden na div(id=telaDois) e tirar o da div(id=servicoEducacao)-->
+            <button class="botao-servico">📚<br>Educação</button>
+            <!-- botão deve adcionar hidden na div(id=telaDois) e tirar o da div(id=servicoEmergencia)-->
+            <button class="botao-servico">🚨<br>Emergência</button>
+            <!-- botão deve adcionar hidden na div(id=telaDois) e tirar o da div(id=servicoSocial)-->
+            <button class="botao-servico">🤝<br>Assistência Social</button>
+            <!-- botão deve adcionar hidden na div(id=telaDois) e tirar o da div(id=servicoPrefeitura)-->
+            <button class="botao-servico">🏛️<br>Serviços da Prefeitura</button>
+            <!-- botão deve adcionar hidden na div(id=telaDois) e tirar o da div(id=servicoMapa)-->
+            <button class="botao-servico">🗺️<br>Mapa da Cidade</button>
+          </div>
+
+          <!-- botão deve adcionar hidden na div(id=telaDois) e tirar o da div(id=noticias)-->
+          <button class="botao-noticias">Ver Notícias</button>
+        </div>
+
+        <div id="servicos">
+          
+          <!-- Tela serviço de Saúde-->
+          <div id="servicoSaude" class="hidden">
+            <h2 class="titulo-servicos">Serviços de <span class="azul">Saúde</span></h2>
+
+            <div class="abas">
+              <!-- ja aparece normalmente -->
+              <button id="posto" class="aba ativa">Postos</button>
+              <!-- ao clicar muda a classe de id=UPA para aba ativa e de id=posto para aba -->
+              <!-- ao clicar muda a classe de id=PostoMenu para hidden e retira o hidden de id=UPAsMenu -->
+              <button id="UPA" class="aba">UPAs</button>
+              <!-- ao clicar muda a classe de id=Campanhas para aba ativa e de id=UPA para aba -->
+              <!-- ao clicar muda a classe de id=UPAsMenu para hidden e retira o hidden de id=CampanhasMenu -->
+              <button id="Campanhas" class="aba">Campanhas</button>
+            </div>
+
+            <div id="PostosMenu" class="hidden"> 
+              <div class="cartao">
+                <h3>Posto de Saúde João Paulo II</h3>
+                <p>📅 <strong>Horário:</strong> 07h às 17h, de segunda a sexta</p>
+                <p>🧾 <strong>Documentos:</strong> RG e Cartão SUS</p>
+                <p>📞 <strong>Telefone:</strong> (99) 90000-000</p>
+                <p>📍 <strong>Endereço:</strong> Rua das Flores, nº 100 - Centro</p>
+                <div class="acoes">
+                  <button class="btn-secundario">Ver em Detalhes</button>
+                  <button class="btn-primario">Ver no Mapa</button>
+                </div>
+              </div>
+
+              <div class="cartao">
+                <h3>Posto de Saúde Santa Ana</h3>
+                <p>📅 <strong>Horário:</strong> 07h às 17h, de segunda a sexta</p>
+                <p>🧾 <strong>Documentos:</strong> RG e Cartão SUS</p>
+                <p>📞 <strong>Telefone:</strong> (99) 91111-111</p>
+                <p>📍 <strong>Endereço:</strong> Rua do Limoeiro, nº 32 - Goiás</p>
+                <div class="acoes">
+                  <button class="btn-secundario">Ver em Detalhes</button>
+                 <button class="btn-primario">Ver no Mapa</button>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Corrigir INFO -->
+            <div id="UPAsMenu" class="hidden"> 
+              <div class="cartao">
+                <h3>Posto de Saúde João Paulo II</h3>
+                <p>📅 <strong>Horário:</strong> 07h às 17h, de segunda a sexta</p>
+                <p>🧾 <strong>Documentos:</strong> RG e Cartão SUS</p>
+                <p>📞 <strong>Telefone:</strong> (99) 90000-000</p>
+                <p>📍 <strong>Endereço:</strong> Rua das Flores, nº 100 - Centro</p>
+                <div class="acoes">
+                  <button class="btn-secundario">Ver em Detalhes</button>
+                  <button class="btn-primario">Ver no Mapa</button>
+                </div>
+              </div>
+
+              <div class="cartao">
+                <h3>Posto de Saúde Santa Ana</h3>
+                <p>📅 <strong>Horário:</strong> 07h às 17h, de segunda a sexta</p>
+                <p>🧾 <strong>Documentos:</strong> RG e Cartão SUS</p>
+                <p>📞 <strong>Telefone:</strong> (99) 91111-111</p>
+                <p>📍 <strong>Endereço:</strong> Rua do Limoeiro, nº 32 - Goiás</p>
+                <div class="acoes">
+                  <button class="btn-secundario">Ver em Detalhes</button>
+                 <button class="btn-primario">Ver no Mapa</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Corrigir INFO -->
+            <div id="CampanhasMenu" class=""> 
+              <div class="cartao">
+                <h3>Posto de Saúde João Paulo II</h3>
+                <p>📅 <strong>Horário:</strong> 07h às 17h, de segunda a sexta</p>
+                <p>🧾 <strong>Documentos:</strong> RG e Cartão SUS</p>
+                <p>📞 <strong>Telefone:</strong> (99) 90000-000</p>
+                <p>📍 <strong>Endereço:</strong> Rua das Flores, nº 100 - Centro</p>
+                <div class="acoes">
+                  <button class="btn-secundario">Ver em Detalhes</button>
+                  <button class="btn-primario">Ver no Mapa</button>
+                </div>
+              </div>
+
+              <div class="cartao">
+                <h3>Posto de Saúde Santa Ana</h3>
+                <p>📅 <strong>Horário:</strong> 07h às 17h, de segunda a sexta</p>
+                <p>🧾 <strong>Documentos:</strong> RG e Cartão SUS</p>
+                <p>📞 <strong>Telefone:</strong> (99) 91111-111</p>
+                <p>📍 <strong>Endereço:</strong> Rua do Limoeiro, nº 32 - Goiás</p>
+                <div class="acoes">
+                  <button class="btn-secundario">Ver em Detalhes</button>
+                 <button class="btn-primario">Ver no Mapa</button>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <!-- Tela serviço de Educação-->
+          <div id="servicoEducacao" class="hidden">
+
+          </div>
+          <!-- Tela serviço de Emergência-->
+          <div id="servicoEmergencia" class="hidden">
+
+          </div>
+          <!-- Tela serviço de Assistencia Social-->
+          <div id="servicoSocial" class="hidden">
+
+          </div>
+          <!-- Tela serviço da Prefeitura-->
+          <div id="servicoPrefeitura" class="hidden">
+
+          </div>
+          <!-- Tela serviço de Mapa da cidade-->
+          <div id="servicoMapa">
+
+          </div>
+        </div>
+        
+        <div id="voltar">
+          <button class="">⬅ Voltar</button>
+        </div>
+        <!-- volta para SelectCidade (tela 1 parte 2)-->
+        <div id="house" class="hidden">
+          <button class=" ">🏠</button>
+        </div>
+    </div>
+</body>
+</html>
