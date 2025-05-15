@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <div id="telaUm" class=""> 
+        <div id="telaUm" class="hidden"> 
           <img src="IMG/Logo.png" alt="Logo InfoCidadão" class="logo" />
 
           <!-- tela inicial onde somente se clica no botão começar-->
@@ -32,18 +32,22 @@
             
             <!-- Pega o valor de Cidade-->
             <button>Usar cidade</button>
-            <!-- botão deve adcionar hidden na div(id=telaUm) e tirar o da div(id=telaDois) e div(id=house)-->
+            <!-- botão deve adcionar hidden na div(id=telaUm) e tirar o da div(id=telaDois), div(id=house) e div(id=cabecalhoDiv)-->
           </div>
         </div>
 
-        <!-- Tela três selecionar o serviço--> 
-        <div id="telaDois" class="hidden">
+        <!-- cabeçalho das páginas-->
+        <div id="cabecalhoDiv" class="">
           <header class="cabecalho">
             <img src="IMG/Logo.png" alt="">
             <p>App <br><strong>InfoCidadão</strong></p>
             <p>Cidade:<br> nome</strong></p>
           </header>
-
+        </div>
+        
+        <!-- Tela três selecionar o serviço--> 
+        <div id="telaDois" class="hidden">
+          
           <h2 class="titulo-servicos">Serviços de Cidade nome</span></h2>
 
           <div class="campo-busca">
@@ -65,14 +69,110 @@
             <button class="botao-servico">🗺️<br>Mapa da Cidade</button>
           </div>
 
+          <!-- botão deve adcionar hidden na div(id=telaDois) e tirar o da div(id=noticias)-->
           <button class="botao-noticias">Ver Notícias</button>
         </div>
 
-        <div class="servicos">
+        <div id="servicos">
+          
           <!-- Tela serviço de Saúde-->
-          <div id="servicoSaude">
+          <div id="servicoSaude" class="">
+            <h2 class="titulo-servicos">Serviços de <span class="azul">Saúde</span></h2>
 
+            <div class="abas">
+              <!-- ja aparece normalmente -->
+              <button id="posto" class="aba ativa">Postos</button>
+              <!-- ao clicar muda a classe de id=UPA para aba ativa e de id=posto para aba -->
+              <!-- ao clicar muda a classe de id=PostoMenu para hidden e retira o hidden de id=UPAsMenu -->
+              <button id="UPA" class="aba">UPAs</button>
+              <!-- ao clicar muda a classe de id=Campanhas para aba ativa e de id=UPA para aba -->
+              <!-- ao clicar muda a classe de id=UPAsMenu para hidden e retira o hidden de id=CampanhasMenu -->
+              <button id="Campanhas" class="aba">Campanhas</button>
+            </div>
+
+            <div id="PostosMenu" class="hidden"> 
+              <div class="cartao">
+                <h3>Posto de Saúde João Paulo II</h3>
+                <p>📅 <strong>Horário:</strong> 07h às 17h, de segunda a sexta</p>
+                <p>🧾 <strong>Documentos:</strong> RG e Cartão SUS</p>
+                <p>📞 <strong>Telefone:</strong> (99) 90000-000</p>
+                <p>📍 <strong>Endereço:</strong> Rua das Flores, nº 100 - Centro</p>
+                <div class="acoes">
+                  <button class="btn-secundario">Ver em Detalhes</button>
+                  <button class="btn-primario">Ver no Mapa</button>
+                </div>
+              </div>
+
+              <div class="cartao">
+                <h3>Posto de Saúde Santa Ana</h3>
+                <p>📅 <strong>Horário:</strong> 07h às 17h, de segunda a sexta</p>
+                <p>🧾 <strong>Documentos:</strong> RG e Cartão SUS</p>
+                <p>📞 <strong>Telefone:</strong> (99) 91111-111</p>
+                <p>📍 <strong>Endereço:</strong> Rua do Limoeiro, nº 32 - Goiás</p>
+                <div class="acoes">
+                  <button class="btn-secundario">Ver em Detalhes</button>
+                 <button class="btn-primario">Ver no Mapa</button>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Corrigir INFO -->
+            <div id="UPAsMenu" class="hidden"> 
+              <div class="cartao">
+                <h3>Posto de Saúde João Paulo II</h3>
+                <p>📅 <strong>Horário:</strong> 07h às 17h, de segunda a sexta</p>
+                <p>🧾 <strong>Documentos:</strong> RG e Cartão SUS</p>
+                <p>📞 <strong>Telefone:</strong> (99) 90000-000</p>
+                <p>📍 <strong>Endereço:</strong> Rua das Flores, nº 100 - Centro</p>
+                <div class="acoes">
+                  <button class="btn-secundario">Ver em Detalhes</button>
+                  <button class="btn-primario">Ver no Mapa</button>
+                </div>
+              </div>
+
+              <div class="cartao">
+                <h3>Posto de Saúde Santa Ana</h3>
+                <p>📅 <strong>Horário:</strong> 07h às 17h, de segunda a sexta</p>
+                <p>🧾 <strong>Documentos:</strong> RG e Cartão SUS</p>
+                <p>📞 <strong>Telefone:</strong> (99) 91111-111</p>
+                <p>📍 <strong>Endereço:</strong> Rua do Limoeiro, nº 32 - Goiás</p>
+                <div class="acoes">
+                  <button class="btn-secundario">Ver em Detalhes</button>
+                 <button class="btn-primario">Ver no Mapa</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Corrigir INFO -->
+            <div id="CampanhasMenu" class=""> 
+              <div class="cartao">
+                <h3>Posto de Saúde João Paulo II</h3>
+                <p>📅 <strong>Horário:</strong> 07h às 17h, de segunda a sexta</p>
+                <p>🧾 <strong>Documentos:</strong> RG e Cartão SUS</p>
+                <p>📞 <strong>Telefone:</strong> (99) 90000-000</p>
+                <p>📍 <strong>Endereço:</strong> Rua das Flores, nº 100 - Centro</p>
+                <div class="acoes">
+                  <button class="btn-secundario">Ver em Detalhes</button>
+                  <button class="btn-primario">Ver no Mapa</button>
+                </div>
+              </div>
+
+              <div class="cartao">
+                <h3>Posto de Saúde Santa Ana</h3>
+                <p>📅 <strong>Horário:</strong> 07h às 17h, de segunda a sexta</p>
+                <p>🧾 <strong>Documentos:</strong> RG e Cartão SUS</p>
+                <p>📞 <strong>Telefone:</strong> (99) 91111-111</p>
+                <p>📍 <strong>Endereço:</strong> Rua do Limoeiro, nº 32 - Goiás</p>
+                <div class="acoes">
+                  <button class="btn-secundario">Ver em Detalhes</button>
+                 <button class="btn-primario">Ver no Mapa</button>
+                </div>
+              </div>
+            </div>
+            
           </div>
+
           <!-- Tela serviço de Educação-->
           <div id="servicoEducacao" class="hidden">
 
@@ -95,7 +195,9 @@
           </div>
         </div>
         
-
+        <div id="voltar">
+          <button class="">⬅ Voltar</button>
+        </div>
         <!-- volta para SelectCidade (tela 1 parte 2)-->
         <div id="house" class="hidden">
           <button class=" ">🏠</button>
