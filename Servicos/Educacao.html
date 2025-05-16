@@ -26,24 +26,25 @@
 
                 <div class="abas">
                     
-                    <button id="matriculas" class="aba ativa">Matrículas</button>
+                    <button id="matriculas" class="aba ativa" onclick="alterarDiv('matriculas', 'escolasPubli', 'programas', 'ativa'), alterarDivR('matriculasMenu', 'escolasPubliMenu', 'programasMenu', 'hidden')">Matrículas</button>
                     
-                    <button id="escolasPubli" class="aba">Escolas publicas</button>
+                    <button id="escolasPubli" class="aba" onclick="alterarDiv('escolasPubli', 'matriculas', 'programas', 'ativa'), alterarDivR('escolasPubliMenu', 'matriculasMenu', 'programasMenu', 'hidden')">Escolas </button>
                     
-                    <button id="programas" class="aba">Programas</button>
+                    <button id="programas" class="aba" onclick="alterarDiv('programas', 'escolasPubli', 'matriculas', 'ativa'), alterarDivR('programasMenu', 'escolasPubliMenu', 'matriculasMenu', 'hidden')">Programas</button>
                 </div>
 
 
 
                 <div id="matriculasMenu" class=""> 
-                
+                <p>1</p>
                 </div>
 
                 <div id="escolasPubliMenu" class="hidden"> 
-                
+                <p>2</p>
                 </div>
 
                 <div id="programasMenu" class="hidden"> 
+                    <p>3</p>
                 </div>
             </div>
           
@@ -53,7 +54,7 @@
         
         <!-- vai para SelectMunicipio.html-->
         <div id="house" class="">
-            <button class=" "><i class="fas fa-home"></i></button>
+            <button class=" " onclick="redirecionarPara('/SelectMunicipio.html')"><i class="fas fa-home"></i></button>
         </div>
 
 

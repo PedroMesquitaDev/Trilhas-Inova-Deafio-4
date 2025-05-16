@@ -26,13 +26,13 @@
 
               <div class="abas">
                 <!-- ja aparece normalmente -->
-                <button id="posto" class="aba ativa">Postos</button>
+                <button id="posto" class="aba ativa" onclick="alterarDiv('posto', 'UPA', 'Campanhas', 'ativa'), alterarDivR('PostosMenu', 'UPAsMenu', 'CampanhasMenu', 'hidden')">Postos</button>
                 <!-- ao clicar muda a classe de id=UPA para aba ativa e de id=posto para aba -->
                 <!-- ao clicar muda a classe de id=PostoMenu para hidden e retira o hidden de id=UPAsMenu -->
-                <button id="UPA" class="aba">UPAs</button>
+                <button id="UPA" class="aba"  onclick="alterarDiv('UPA', 'posto', 'Campanhas', 'ativa'), alterarDivR('UPAsMenu', 'PostosMenu', 'CampanhasMenu', 'hidden')">UPAs</button>
                 <!-- ao clicar muda a classe de id=Campanhas para aba ativa e de id=UPA para aba -->
                 <!-- ao clicar muda a classe de id=UPAsMenu para hidden e retira o hidden de id=CampanhasMenu -->
-                <button id="Campanhas" class="aba">Campanhas</button>
+                <button id="Campanhas" class="aba" onclick="alterarDiv('Campanhas', 'posto', 'UPA', 'ativa'), alterarDivR('CampanhasMenu', 'PostosMenu', 'UPAsMenu', 'hidden')">Campanhas</button>
               </div>
 
               <div id="PostosMenu" class=""> 
@@ -42,7 +42,7 @@
 
               
               <div id="UPAsMenu" class="hidden"> 
-                
+              
               </div>
 
               
@@ -59,7 +59,7 @@
         
         <!-- vai para SelectMunicipio.html-->
         <div id="house" class="">
-            <button class=" "><i class="fas fa-home"></i></button>
+            <button class=" " onclick="redirecionarPara('/SelectMunicipio.html')"><i class="fas fa-home"></i></button>
         </div>
 
 
