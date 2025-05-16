@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Cidadão</title>
+    <link rel="stylesheet" href="Style.css" />
+    <!-- Local Icone-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- cabeçalho das páginas-->
+        <div id="cabecalhoDiv" class="">
+          <header class="cabecalho">
+            <img src="IMG/Logo.png" alt="">
+            <p>App <br><strong>InfoCidadão</strong></p>
+            <p>Cidade:<br> nome</strong></p>
+          </header>
+        </div>
+
+        <div id="servicos">
+          <!-- Tela serviço de Saúde-->
+          <div id="servicoSaude" class="">
+            <h2 class="titulo-servicos">Serviços de <span class="azul">Saúde</span></h2>
+
+              <div class="abas">
+                <!-- ja aparece normalmente -->
+                <button id="posto" class="aba ativa">Postos</button>
+                <!-- ao clicar muda a classe de id=UPA para aba ativa e de id=posto para aba -->
+                <!-- ao clicar muda a classe de id=PostoMenu para hidden e retira o hidden de id=UPAsMenu -->
+                <button id="UPA" class="aba">UPAs</button>
+                <!-- ao clicar muda a classe de id=Campanhas para aba ativa e de id=UPA para aba -->
+                <!-- ao clicar muda a classe de id=UPAsMenu para hidden e retira o hidden de id=CampanhasMenu -->
+                <button id="Campanhas" class="aba">Campanhas</button>
+              </div>
+
+              <div id="PostosMenu" class=""> 
+              
+              </div>
+
+
+              
+              <div id="UPAsMenu" class="hidden"> 
+                
+              </div>
+
+              
+              <div id="CampanhasMenu" class="hidden"> 
+                
+              </div>
+            
+          </div>
+
+        
+
+            
+        </div>
+        
+        <!-- vai para SelectMunicipio.html-->
+        <div id="house" class="">
+            <button class=" "><i class="fas fa-home"></i></button>
+        </div>
+
+
+    </div>
+    
+    <script src="Script.js"></script>
+</body>
+</html>
