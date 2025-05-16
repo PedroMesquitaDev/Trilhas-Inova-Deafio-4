@@ -1,6 +1,3 @@
-
-
-
 // colocando os cartões dentro da div no html
 // usar mesma logica nos cartões seguintes 
 const postosDeSaude = [

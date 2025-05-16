@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Info Cidadão</title>
-    <link rel="stylesheet" href="Style.css" />
-    <!-- Local Icone-->
+    <link rel="stylesheet" href="Styles/SelectMunicipio.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-    <div class="container">
+    <script src="Js/SelectMunicipio.js" defer></script>
 
+    <title>InfoCidadão</title>
+</head>
+
+<body>
+    <section>
         <img src="IMG/Logo.png" alt="Logo InfoCidadão" class="logo" />
 
-        <!-- Segunda tela onde se escolhe o municipio-->
-          <div id="selectCidade" class="select-wrapper">
-            <h2>Escolha seu município</h2>
-            <select id="cidade">
+        <div class="mensagem select-wrapper">
+            <h1 class="titulo">Selecione seu município</h1>
+
+            <select class="select">
                 <option disabled selected>Selecione uma cidade</option>
-                <option value="Cidade1">Cidade1</option>
-                <option value="Cidade2">Cidade2</option>
-                <option value="Cidade3">Cidade3</option>    
+                <option value="Cidade1">São Luís</option>
+                <option value="Cidade2">Imperatriz</option>
+                <option value="Cidade3">Codó</option>
             </select>
-            
-            <!-- Pega o valor de Cidade-->
-            <!-- vai para index.html-->
-            <button>Usar cidade</button>
-          </div>
-    </div>
-    <script src="Script.js"></script>
+        </div>
+
+        <button class="botao" disabled>Usar Cidade</button>
+    </section>
 </body>
+
 </html>
