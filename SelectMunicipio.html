@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Cidadão</title>
+    <link rel="stylesheet" href="Style.css" />
+    <!-- Local Icone-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <img src="IMG/Logo.png" alt="Logo InfoCidadão" class="logo" />
+
+        <!-- Segunda tela onde se escolhe o municipio-->
+          <div id="selectCidade" class="select-wrapper">
+            <h2>Escolha seu município</h2>
+            <select id="cidade">
+                <option disabled selected>Selecione uma cidade</option>
+                <option value="Cidade1">Cidade1</option>
+                <option value="Cidade2">Cidade2</option>
+                <option value="Cidade3">Cidade3</option>    
+            </select>
+            
+            <!-- Pega o valor de Cidade-->
+            <!-- vai para index.html-->
+            <button>Usar cidade</button>
+          </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
