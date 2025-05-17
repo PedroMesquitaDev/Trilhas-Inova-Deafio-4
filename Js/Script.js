@@ -21,17 +21,17 @@ function local() {
 // função para tirar nome de duas classes e mover para outras
 // id que adiciona, os 2 que remove e o texto
 function alterarDiv(id, id2, id3, textAlt) {
-      document.getElementById(id).classList.add(textAlt);
-      document.getElementById(id2).classList.remove(textAlt);
-      document.getElementById(id3).classList.remove(textAlt);
-} 
+  document.getElementById(id).classList.add(textAlt);
+  document.getElementById(id2).classList.remove(textAlt);
+  document.getElementById(id3).classList.remove(textAlt);
+}
 
 // função para tirar nome de uma classes e mover para outras duas
 // id que remove, os 2 que adiciona e o texto
 function alterarDivR(id, id2, id3, textAlt) {
-      document.getElementById(id).classList.remove(textAlt);
-      document.getElementById(id2).classList.add(textAlt);
-      document.getElementById(id3).classList.add(textAlt);
+  document.getElementById(id).classList.remove(textAlt);
+  document.getElementById(id2).classList.add(textAlt);
+  document.getElementById(id3).classList.add(textAlt);
 }
 
 // colocando os cartões dentro da div no html
@@ -41,26 +41,26 @@ function alterarDivR(id, id2, id3, textAlt) {
 // Saúde
 //posto de saude
 const postosDeSaude = [
-    {
-      nome: "Posto de Saúde João Paulo II",
-      horario: "07h às 17h, de segunda a sexta",
-      documentos: "RG e Cartão SUS",
-      telefone: "(99) 90000-000",
-      endereco: "Rua das Flores, nº 100 - Centro"
-    },
-    {
-      nome: "Posto de Saúde Santa Ana",
-      horario: "07h às 17h, de segunda a sexta",
-      documentos: "RG e Cartão SUS",
-      telefone: "(99) 91111-111",
-      endereco: "Rua do Limoeiro, nº 32 - Goiás"
-    }
-  ];
+  {
+    nome: "Posto de Saúde João Paulo II",
+    horario: "07h às 17h, de segunda a sexta",
+    documentos: "RG e Cartão SUS",
+    telefone: "(99) 90000-000",
+    endereco: "Rua das Flores, nº 100 - Centro"
+  },
+  {
+    nome: "Posto de Saúde Santa Ana",
+    horario: "07h às 17h, de segunda a sexta",
+    documentos: "RG e Cartão SUS",
+    telefone: "(99) 91111-111",
+    endereco: "Rua do Limoeiro, nº 32 - Goiás"
+  }
+];
 
-  const container = document.getElementById("PostosMenu");
+const container = document.getElementById("PostosMenu");
 
-  postosDeSaude.forEach(posto => {
-    container.innerHTML += `
+postosDeSaude.forEach(posto => {
+  container.innerHTML += `
       <div class="cartao">
         <h3>${posto.nome}</h3>
         <p><i class="fas fa-calendar-alt"></i><strong> Horário:</strong> ${posto.horario}</p>
@@ -73,17 +73,52 @@ const postosDeSaude = [
         </div>
       </div>
     `;
-  });
+});
 
 
-  // Upas
-  const upas = [
+// Upas
+const upas = [
   {
     nome: "UPA Cidade Operária",
     horario: "24h por dia, todo dia",
     documentos: "Nenhum é necessário",
     telefone: "(99) 98000-000",
     endereco: "Rua dos Golfos, nº 82 - Centro"
+  },
+  {
+    nome: "UPA São João",
+    horario: "24h por dia, todo dia",
+    documentos: "Nenhum é necessário",
+    telefone: "(99) 91111-111",
+    endereco: "Rua Santa, nº 32 - Goiás"
+  },
+  {
+    nome: "UPA São João",
+    horario: "24h por dia, todo dia",
+    documentos: "Nenhum é necessário",
+    telefone: "(99) 91111-111",
+    endereco: "Rua Santa, nº 32 - Goiás"
+  },
+  {
+    nome: "UPA São João",
+    horario: "24h por dia, todo dia",
+    documentos: "Nenhum é necessário",
+    telefone: "(99) 91111-111",
+    endereco: "Rua Santa, nº 32 - Goiás"
+  },
+  {
+    nome: "UPA São João",
+    horario: "24h por dia, todo dia",
+    documentos: "Nenhum é necessário",
+    telefone: "(99) 91111-111",
+    endereco: "Rua Santa, nº 32 - Goiás"
+  },
+  {
+    nome: "UPA São João",
+    horario: "24h por dia, todo dia",
+    documentos: "Nenhum é necessário",
+    telefone: "(99) 91111-111",
+    endereco: "Rua Santa, nº 32 - Goiás"
   },
   {
     nome: "UPA São João",

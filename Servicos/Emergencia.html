@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info Cidadão</title>
-    <link rel="stylesheet" href="../Styles/Style.css"/>
+    <link rel="stylesheet" href="../Styles/Style.css" />
     <!-- Local Icone-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
     <div class="container">
         <!-- cabeçalho das páginas-->
         <div id="cabecalhoDiv" class="">
-          <header class="cabecalho">
-            <img src="/IMG/Logo.png" alt="">
-            <p>App <br><strong>InfoCidadão</strong></p>
-            <p>Cidade:<br><strong class="nome-cidade"> nome</strong></p>
-          </header>
+            <header class="cabecalho">
+                <img src="/IMG/Logo.png" alt="">
+                <p>App <br><strong>InfoCidadão</strong></p>
+                <p>Cidade:<br><strong class="nome-cidade"> nome</strong></p>
+            </header>
         </div>
 
         <div id="servicos">
@@ -25,51 +27,51 @@
                 <h2 class="titulo-servicos">Serviços de <span class="azul">Emergência</span></h2>
 
                 <div class="abas">
-                    
+
                     <button id="telefones" class="aba ativa">Telefones</button>
-                    
+
                     <button id="UnidadeUe" class="aba">UnidadeUE</button>
-                    
+
                     <button id="Guia" class="aba">Guia de Emergência</button>
                 </div>
 
-                <div id="telefonesMenu" class=""> 
-                
+                <div id="telefonesMenu" class="">
+
                 </div>
 
-                <div id="UnidadeUeMenu" class="hidden"> 
-                
+                <div id="UnidadeUeMenu" class="hidden">
+
                 </div>
 
-                <div id="GuiaMenu" class="hidden"> 
+                <div id="GuiaMenu" class="hidden">
                 </div>
             </div>
 
-          
-          <!-- Tela serviço de Assistencia Social-->
-          <div id="servicoSocial" class="hidden">
 
-          </div>
-          <!-- Tela serviço da Prefeitura-->
-          <div id="servicoPrefeitura" class="hidden">
+            <!-- Tela serviço de Assistencia Social-->
+            <div id="servicoSocial" class="hidden">
 
-          </div>
-          <!-- Tela serviço de Mapa da cidade-->
-          <div id="servicoMapa">
+            </div>
+            <!-- Tela serviço da Prefeitura-->
+            <div id="servicoPrefeitura" class="hidden">
 
-          </div>
+            </div>
+            <!-- Tela serviço de Mapa da cidade-->
+            <div id="servicoMapa">
 
-            
+            </div>
+
         </div>
-        
+
         <!-- vai para SelectMunicipio.html-->
         <div id="house" class="">
-            <button class=" " onclick="redirecionarPara('/SelectMunicipio.html')"><i class="fas fa-home"></i></button>
+            <button class=" " onclick="redirecionarPara('../index.html')"><i class="fas fa-home"></i></button>
         </div>
 
 
     </div>
-    
+
     <script src="../Js/Script.js"></script>
 </body>
+
 </html>
