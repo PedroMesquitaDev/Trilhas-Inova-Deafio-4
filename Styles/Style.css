@@ -5,25 +5,26 @@
     box-sizing: border-box;
 }
   
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fefefe;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Garante altura mínima de 100% da tela, mas permite crescer */
-    flex-direction: column;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ccc;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  height: 100vh;
 }
-  
 .container{
-    text-align: center;
-    background-color: #ffffff;
-    padding: 30px 20px;
-    border-radius: 10px;
-    width: 90%;
-    height: 90%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 30%;
+  height: 98%;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin: 10px 0;
 }
+
+
   
 .logo{
     width: 150px;
@@ -121,8 +122,10 @@ button:hover{
 }
 
 .cabecalho img{
-  height: 5%;
-  width: 5%;
+  height: 15%;
+  width: 15%;
+  transform: translateY(20%);
+  
 }
 
 .titulo-servicos {
@@ -138,7 +141,7 @@ button:hover{
 }
 
 .campo-busca input {
-  width: 50%;
+  width: 90%;
   padding: 12px 45px 12px 15px;
   border: none;
   border-radius: 16px;
@@ -149,11 +152,11 @@ button:hover{
 }
 
 .grade-servicos {
-  width: 50%;
-  margin: 30px auto; 
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
+  padding-bottom: 4rem;
 }
 
 
@@ -176,18 +179,24 @@ button:hover{
 }
 
 .botao-noticias {
-  transform: translateX(-195%);
+  transform: translateX(-90%);
 }
 
 .botao-noticias:hover {
   background-color: #0055aa;
 }
 
-#house{
-    padding-top: 5rem;
+.house {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* garante que fique por cima de outros elementos */
+  width: 23%;
 }
+
 #house button{
-    width: 50%;
+    width: 100%;
 }
 
 
