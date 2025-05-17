@@ -1,6 +1,6 @@
 const usarCidade = document.querySelector(".botao");
 const select = document.querySelector(".select");
-const cidade = localStorage.getItem("cidade");
+const cidade = localStorage.getItem("valorSelect");
 
 // Executa assim que a pagina inicia
 autoFillSelect();
@@ -11,7 +11,8 @@ usarCidade.addEventListener("click", () => {
     if (select.value === "Selecione uma cidade") {
         alert("Selecione uma cidade disponível");
     } else {
-        localStorage.setItem("cidade", select.value);
+        localStorage.setItem("valorSelect", select.value);
+        localStorage.setItem("nomeCidade", select.options[select.selectedIndex].text);
         window.location.href = "Index.html";
     }
 });

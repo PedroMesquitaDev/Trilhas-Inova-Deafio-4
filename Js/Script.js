@@ -1,9 +1,22 @@
+local();
+
 // função passar pagina
 function redirecionarPara(paginaHtml) {
   window.location.href = paginaHtml;
 }
 
+function local() {
+  const cidade = localStorage.getItem("nomeCidade");
+  if (!cidade) {
+    alert("Você pulou uma etapa");
+    return
+  }
 
+  const nomes = document.querySelectorAll(".nome-cidade");
+  nomes.forEach(nome => {
+    nome.textContent = cidade;
+  });
+}
 
 // função para tirar nome de duas classes e mover para outras
 // id que adiciona, os 2 que remove e o texto
