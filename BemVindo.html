@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Info Cidadão</title>
-    <link rel="stylesheet" href="Style.css" />
-</head>
-<body>
-    <div class="container">
-        <div id="telaUm" class=""> 
-          <img src="IMG/Logo.png" alt="Logo InfoCidadão" class="logo" />
-
-          <!-- tela inicial onde somente se clica no botão começar-->
-          <div id="bemVindo" class="">
-            <h1>INFO CIDADÃO</h1>
-            <p class="subtitulo">Todas as informações da sua cidade na sua tela</p>
-
-            <!-- vai para SelectMunicipio.html-->
-            <button onclick="redirecionarPara('SelectMunicipio.html')">Começar</button>
-          </div>
-        
-        </div>
-    </div>
+    <link rel="stylesheet" href="Styles/BemVindo.css"/>
+    <script src="Js/Script.js"></script>
     
-    <script src="Script.js"></script>
+    <title>InforMA | Cidadão</title>
+</head>
 
+<body>
+    <section>
+        <img src="IMG/Logo.png" alt="Logo InfoCidadão" class="logo" />
+
+        <div class="mensagem">
+            <h1 class="titulo">InforMA | Cidadão</h1>
+            <p class="subtitulo">Todas as informações da sua cidade na sua tela</p>
+        </div>
+
+        <button onclick="redirecionarPara('SelectMunicipio.html')" class="botao">Começar</button>
+    </section>
 </body>
+
 </html>
