@@ -52,7 +52,7 @@ section {
 }
 
 .logo {
-    height: 280px;
+    height: 25%;
 }
 
 .mensagem {
@@ -79,8 +79,10 @@ section {
     border: none;
     border-radius: 12px;
 
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: var(--font-primary);
+    color: #002f34;
 
     appearance: none;
     -webkit-appearance: none;
@@ -99,7 +101,7 @@ section {
     position: absolute;
     right: 5%;
     bottom: 2%;
-    
+
     content: "\f002";
 
     font-family: "Font Awesome 6 Free";
@@ -116,10 +118,10 @@ section {
     justify-content: center;
     padding: 0.7rem 1rem;
     position: absolute;
-    bottom: 4.5rem;
+    bottom: 4rem;
 
     color: var(--color-fourth);
-    background-color: var(--color-secondary);
+    background-color: #0c3c69;
 
     border: none;
     border-radius: 10px;
@@ -129,9 +131,34 @@ section {
     font-size: 1.5rem;
     cursor: pointer;
 
-    width: 250px;
+    width: 20%;
 }
 
 .botao:disabled {
     background-color: var(--color-fifth);
+}
+
+.botao:hover {
+    background-color: #0055aa;
+}
+
+@media (max-width: 1350px) {
+    .titulo {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 940px) {
+    section {
+        width: 60%;
+        height: 100%;
+    }
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .botao {
+        width: 40%;
+    }
 }

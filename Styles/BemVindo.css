@@ -7,7 +7,7 @@
 
     --color-primary: #093640;
     /*Cor principal de Títulos*/
-    --color-secondary: #134373;
+    --color-secondary: #002f34;
     /*Cor da maioria dos botoes e certos campos*/
     --color-tertiary: #003366;
     /*Cor de uns negocio ai*/
@@ -50,7 +50,7 @@ section {
 }
 
 .logo {
-    height: 280px;
+    height: 25%;
 }
 
 .mensagem {
@@ -62,7 +62,7 @@ section {
 .titulo {
     font-family: var(--font-primary);
     font-weight: 800;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 
     color: var(--color-primary);
 }
@@ -72,7 +72,7 @@ section {
     font-weight: 600;
     font-size: 1.5rem;
 
-    color: var(--color-secondary);
+    color: var(--color-primary);
 }
 
 .botao {
@@ -80,10 +80,10 @@ section {
     justify-content: center;
     padding: 0.7rem 3.5rem;
     position: absolute;
-    bottom: 4.5rem;
+    bottom: 4rem;
 
     color: var(--color-fourth);
-    background-color: var(--color-secondary);
+    background-color: #0c3c69;
 
     border: none;
     border-radius: 10px;
@@ -93,5 +93,34 @@ section {
     font-size: 1.5rem;
     cursor: pointer;
 
-    width: 250px;
+    width: 20%;
+}
+
+.botao:hover {
+  background-color: #0055aa;
+}
+
+@media (max-width: 1350px) {
+    .titulo {
+        font-size: 1.8rem;
+    }
+
+    .subtitulo {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    section {
+        width: 60%;
+        height: 100%;
+    }
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .botao {
+        width: 40%;
+    }
 }
