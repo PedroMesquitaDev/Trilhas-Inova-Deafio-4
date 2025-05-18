@@ -1,4 +1,6 @@
-local();
+if (window.location.pathname !== "/BemVindo.html") {
+  local();
+}
 
 // função passar pagina
 function redirecionarPara(paginaHtml) {
@@ -9,6 +11,7 @@ function local() {
   const cidade = localStorage.getItem("nomeCidade");
   if (!cidade) {
     alert("Você pulou uma etapa");
+    window.location.href = "SelectMunicipio.html";
     return
   }
 
