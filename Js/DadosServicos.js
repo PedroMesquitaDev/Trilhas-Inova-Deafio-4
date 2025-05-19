@@ -1,4 +1,5 @@
 const nomeCidade = localStorage.getItem("nomeCidade");
+let botoesAtivados = false;
 let abas = document.querySelectorAll(".aba");
 
 // Os objetos de uma secao devem ter o mesmo nome que a id da sua respectiva aba
@@ -131,8 +132,6 @@ const secoesAssitenciaSocial = {};
 const secoesServicosPrefeitura = {};
 
 
-preparaAmbiente();
-
 // Adiciona o click nas abas dos servicos (o parametro secoes é pra identificar o tipo de serviço (saude, educacao, etc))
 function addClick(secoes) {
   abas = document.querySelectorAll(".aba");
@@ -162,8 +161,12 @@ function trocarAba(abaID, secoes) {
   if (secao.container.innerHTML.trim() === "") {
     secao.dados.forEach(cartao => {
       secao.container.innerHTML += secao.render(cartao);
-      botoesDosCartoes();
     });
+    botoesAtivados = false;
+  }
+
+  if (!botoesAtivados) {
+    botoesDosCartoes();
   }
 }
 
@@ -172,23 +175,21 @@ function preparaAmbiente() {
   if (window.location.href.includes("PaginaSaude.html")) {
     addClick(secoesSaude);
     trocarAba("postos", secoesSaude);
+  } else if (window.location.href.includes("Educacao.html")) {
+    addClick(secoesEducacao);
+    trocarAba("matriculas", secoesEducacao);
   } else {
-    if (window.location.href.includes("Educacao.html")) {
-      addClick(secoesEducacao);
-      trocarAba("matriculas", secoesEducacao);
-    } else {
-      addClick(secoesEmergencia);
-      trocarAba("telefones", secoesEmergencia);
-    }
+    addClick(secoesEmergencia);
+    trocarAba("telefones", secoesEmergencia);
   }
-
-  botoesDosCartoes();
 }
 
 // Ativa os botoes dos cartões
 function botoesDosCartoes() {
   const botoes = document.querySelectorAll(".btn-primario");
   const botoesSecundarios = document.querySelectorAll(".btn-secundario");
+
+  if (botoesAtivados) return;
 
   botoes.forEach(botao => {
     botao.addEventListener("click", () => {
@@ -201,6 +202,8 @@ function botoesDosCartoes() {
       console.log("Sem funão ainda");
     });
   });
+
+  botoesAtivados = true;
 }
 
 // Função que leva para o google maps com o endereço do cartão
@@ -223,3 +226,6 @@ function irLocalizacao(botao) {
     }
   });
 }
+
+
+preparaAmbiente();

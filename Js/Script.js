@@ -1,4 +1,6 @@
-local();
+if (!window.location.href.includes("BemVindo.html")) {
+  local();
+}
 
 function redirecionarPara(paginaHtml) {
   window.location.href = paginaHtml;
