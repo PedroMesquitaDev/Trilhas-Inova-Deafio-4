@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Info Cidadão</title>
-    <link rel="stylesheet" href="../Styles/Style.css" />
+    <title>Info | Cidadão</title>
+    <link rel="stylesheet" href="../Styles/Style.css"/>
     <!-- Local Icone-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -28,35 +28,15 @@
                 <h2 class="titulo-servicos">Serviços de <span class="azul">Educação</span></h2>
 
                 <div class="abas">
-
-                    <button id="matriculas" class="aba ativa"
-                        onclick="alterarDiv('matriculas', 'escolasPubli', 'programas', 'ativa'), alterarDivR('matriculasMenu', 'escolasPubliMenu', 'programasMenu', 'hidden')">Matrículas</button>
-
-                    <button id="escolasPubli" class="aba"
-                        onclick="alterarDiv('escolasPubli', 'matriculas', 'programas', 'ativa'), alterarDivR('escolasPubliMenu', 'matriculasMenu', 'programasMenu', 'hidden')">Escolas
-                    </button>
-
-                    <button id="programas" class="aba"
-                        onclick="alterarDiv('programas', 'escolasPubli', 'matriculas', 'ativa'), alterarDivR('programasMenu', 'escolasPubliMenu', 'matriculasMenu', 'hidden')">Programas</button>
+                    <button id="matriculas" class="aba ativa">Matrículas</button>
+                    <button id="escolasPublicas" class="aba">Escolas</button>
+                    <button id="programas" class="aba">Programas</button>
                 </div>
 
-
-
-                <div id="matriculasMenu" class="">
-                    <p>1</p>
-                </div>
-
-                <div id="escolasPubliMenu" class="hidden">
-                    <p>2</p>
-                </div>
-
-                <div id="programasMenu" class="hidden">
-                    <p>3</p>
-                </div>
+                <div id="matriculasMenu" class=""></div>
+                <div id="escolasPublicasMenu" class="hidden"></div>
+                <div id="programasMenu" class="hidden"></div>
             </div>
-
-
-
         </div>
 
         <!-- vai para SelectMunicipio.html-->
@@ -64,9 +44,9 @@
             <button class=" " onclick="redirecionarPara('../index.html')"><i class="fas fa-home"></i></button>
         </div>
 
-
     </div>
 
+    <script src="../Js/DadosServicos.js"></script>
     <script src="../Js/Script.js"></script>
 </body>
 

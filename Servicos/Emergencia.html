@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Info Cidadão</title>
-    <link rel="stylesheet" href="../Styles/Style.css" />
+    <title>Info | Cidadão</title>
+    <link rel="stylesheet" href="../Styles/Style.css"/>
     <!-- Local Icone-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -28,50 +28,26 @@
                 <h2 class="titulo-servicos">Serviços de <span class="azul">Emergência</span></h2>
 
                 <div class="abas">
-
                     <button id="telefones" class="aba ativa">Telefones</button>
-
-                    <button id="UnidadeUe" class="aba">UnidadeUE</button>
-
-                    <button id="Guia" class="aba">Guia de Emergência</button>
+                    <button id="unidadeUe" class="aba">UnidadeUE</button>
+                    <button id="guia" class="aba">Guia de Emergência</button>
                 </div>
 
-                <div id="telefonesMenu" class="">
-
-                </div>
-
-                <div id="UnidadeUeMenu" class="hidden">
-
-                </div>
-
-                <div id="GuiaMenu" class="hidden">
-                </div>
+                <div id="telefonesMenu" class=""></div>
+                <div id="unidadeUeMenu" class="hidden"></div>
+                <div id="guiaMenu" class="hidden"></div>
             </div>
-
-
-            <!-- Tela serviço de Assistencia Social-->
-            <div id="servicoSocial" class="hidden">
-
-            </div>
-            <!-- Tela serviço da Prefeitura-->
-            <div id="servicoPrefeitura" class="hidden">
-
-            </div>
-            <!-- Tela serviço de Mapa da cidade-->
-            <div id="servicoMapa">
-
-            </div>
-
         </div>
 
         <!-- vai para SelectMunicipio.html-->
-        <div id="house" class="">
-            <button class=" " onclick="redirecionarPara('../index.html')"><i class="fas fa-home"></i></button>
+        <div id="house" class="house">
+            <button onclick="redirecionarPara('../index.html')"><i class="fas fa-home"></i></button>
         </div>
 
 
     </div>
 
+    <script src="../Js/DadosServicos.js"></script>
     <script src="../Js/Script.js"></script>
 </body>
 
