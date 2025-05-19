@@ -1,48 +1,49 @@
+const nomeCidade = localStorage.getItem("nomeCidade");
 let abas = document.querySelectorAll(".aba");
 
 // Os objetos de uma secao devem ter o mesmo nome que a id da sua respectiva aba
 
 const secoesSaude = {
-    postos: {
-        container: document.getElementById("postosMenu"),
-        dados: [
-            {
-                nome: "Posto de Saúde João Paulo II",
-                horario: "07h às 17h, de segunda a sexta",
-                documentos: "RG e Cartão SUS",
-                telefone: "(99) 90000-000",
-                endereco: "Rua das Flores, nº 100 - Centro"
-            },
-            {
-                nome: "Posto de Saúde Santa Ana",
-                horario: "07h às 17h, de segunda a sexta",
-                documentos: "RG e Cartão SUS",
-                telefone: "(99) 91111-111",
-                endereco: "Rua do Limoeiro, nº 32 - Goiás"
-            },
-            {
-                nome: "Posto de Saúde Santa Ana",
-                horario: "07h às 17h, de segunda a sexta",
-                documentos: "RG e Cartão SUS",
-                telefone: "(99) 91111-111",
-                endereco: "Rua do Limoeiro, nº 32 - Goiás"
-            },
-            {
-                nome: "Posto de Saúde Santa Ana",
-                horario: "07h às 17h, de segunda a sexta",
-                documentos: "RG e Cartão SUS",
-                telefone: "(99) 91111-111",
-                endereco: "Rua do Limoeiro, nº 32 - Goiás"
-            },
-            {
-                nome: "Posto de Saúde Santa Ana",
-                horario: "07h às 17h, de segunda a sexta",
-                documentos: "RG e Cartão SUS",
-                telefone: "(99) 91111-111",
-                endereco: "Rua do Limoeiro, nº 32 - Goiás"
-            }
-        ],
-        render: posto => `
+  postos: {
+    container: document.getElementById("postosMenu"),
+    dados: [
+      {
+        nome: "Posto de Saúde João Paulo II",
+        horario: "07h às 17h, de segunda a sexta",
+        documentos: "RG e Cartão SUS",
+        telefone: "(99) 90000-000",
+        endereco: "Rua das Flores, nº 100 - Centro"
+      },
+      {
+        nome: "Posto de Saúde Santa Ana",
+        horario: "07h às 17h, de segunda a sexta",
+        documentos: "RG e Cartão SUS",
+        telefone: "(99) 91111-111",
+        endereco: "Rua do Limoeiro, nº 32 - Goiás"
+      },
+      {
+        nome: "Posto de Saúde Santa Ana",
+        horario: "07h às 17h, de segunda a sexta",
+        documentos: "RG e Cartão SUS",
+        telefone: "(99) 91111-111",
+        endereco: "Rua do Limoeiro, nº 32 - Goiás"
+      },
+      {
+        nome: "Posto de Saúde Santa Ana",
+        horario: "07h às 17h, de segunda a sexta",
+        documentos: "RG e Cartão SUS",
+        telefone: "(99) 91111-111",
+        endereco: "Rua do Limoeiro, nº 32 - Goiás"
+      },
+      {
+        nome: "Posto de Saúde Santa Ana",
+        horario: "07h às 17h, de segunda a sexta",
+        documentos: "RG e Cartão SUS",
+        telefone: "(99) 91111-111",
+        endereco: "Rua do Limoeiro, nº 32 - Goiás"
+      }
+    ],
+    render: posto => `
       <div class="cartao">
         <h3>${posto.nome}</h3>
         <p><i class="fas fa-calendar-alt"></i><strong> Horário:</strong> ${posto.horario}</p>
@@ -55,26 +56,26 @@ const secoesSaude = {
         </div>
       </div>
     `
-    },
-    upas: {
-        container: document.getElementById("upasMenu"),
-        dados: [
-            {
-                nome: "UPA Cidade Operária",
-                horario: "24h por dia, todo dia",
-                documentos: "Nenhum é necessário",
-                telefone: "(99) 98000-000",
-                endereco: "Rua dos Golfos, nº 82 - Centro"
-            },
-            {
-                nome: "UPA São João",
-                horario: "24h por dia, todo dia",
-                documentos: "Nenhum é necessário",
-                telefone: "(99) 91111-111",
-                endereco: "Rua Santa, nº 32 - Goiás"
-            }
-        ],
-        render: upa => `
+  },
+  upas: {
+    container: document.getElementById("upasMenu"),
+    dados: [
+      {
+        nome: "UPA Cidade Operária",
+        horario: "24h por dia, todo dia",
+        documentos: "Nenhum é necessário",
+        telefone: "(99) 98000-000",
+        endereco: "Rua dos Golfos, nº 82 - Centro"
+      },
+      {
+        nome: "UPA São João",
+        horario: "24h por dia, todo dia",
+        documentos: "Nenhum é necessário",
+        telefone: "(99) 91111-111",
+        endereco: "Rua Santa, nº 32 - Goiás"
+      }
+    ],
+    render: upa => `
       <div class="cartao">
         <h3>${upa.nome}</h3>
         <p><i class="fas fa-calendar-alt"></i><strong> Horário:</strong> ${upa.horario}</p>
@@ -87,26 +88,26 @@ const secoesSaude = {
         </div>
       </div>
     `
-    },
-    campanhas: {
-        container: document.getElementById("campanhasMenu"),
-        dados: [
-            {
-                titulo: "Vacinação Contra Gripe (Influenza)",
-                horario: "Sem dados",
-                periodo: "Sem dados",
-                documentos: "RG, Cartão SUS e Comprovante de Residência",
-                locais: "Postos de saúde municipais"
-            },
-            {
-                titulo: "Vacinação Infantil Contra Poliomielite",
-                horario: "Sem dados",
-                periodo: "10 a 20 de maio",
-                documentos: "Cartão de Vacinação da Criança e RG do responsável",
-                locais: "UBS da Cohama, Anjo da Guarda e Vinhais"
-            }
-        ],
-        render: campanha => `
+  },
+  campanhas: {
+    container: document.getElementById("campanhasMenu"),
+    dados: [
+      {
+        titulo: "Vacinação Contra Gripe (Influenza)",
+        horario: "Sem dados",
+        periodo: "Sem dados",
+        documentos: "RG, Cartão SUS e Comprovante de Residência",
+        locais: "Postos de saúde municipais"
+      },
+      {
+        titulo: "Vacinação Infantil Contra Poliomielite",
+        horario: "Sem dados",
+        periodo: "10 a 20 de maio",
+        documentos: "Cartão de Vacinação da Criança e RG do responsável",
+        locais: "UBS da Cohama, Anjo da Guarda e Vinhais"
+      }
+    ],
+    render: campanha => `
       <div class="cartao">
         <h3>${campanha.titulo}</h3>
         <p><i class="fas fa-calendar-alt"></i><strong> Horário:</strong> ${campanha.horario}</p>
@@ -118,7 +119,7 @@ const secoesSaude = {
         </div>
       </div>
     `
-    }
+  }
 };
 
 const secoesEducacao = {};
@@ -161,6 +162,7 @@ function trocarAba(abaID, secoes) {
   if (secao.container.innerHTML.trim() === "") {
     secao.dados.forEach(cartao => {
       secao.container.innerHTML += secao.render(cartao);
+      botoesDosCartoes();
     });
   }
 }
@@ -179,4 +181,45 @@ function preparaAmbiente() {
       trocarAba("telefones", secoesEmergencia);
     }
   }
+
+  botoesDosCartoes();
+}
+
+// Ativa os botoes dos cartões
+function botoesDosCartoes() {
+  const botoes = document.querySelectorAll(".btn-primario");
+  const botoesSecundarios = document.querySelectorAll(".btn-secundario");
+
+  botoes.forEach(botao => {
+    botao.addEventListener("click", () => {
+      irLocalizacao(botao);
+    });
+  });
+
+  botoesSecundarios.forEach(botao => {
+    botao.addEventListener("click", () => {
+      console.log("Sem funão ainda");
+    });
+  });
+}
+
+// Função que leva para o google maps com o endereço do cartão
+function irLocalizacao(botao) {
+  const cartao = botao.parentElement.parentElement; //Pega a div cartão
+  const tagsP = cartao.querySelectorAll("p");       // Pega todas as tags p do cartão
+
+  tagsP.forEach(p => {
+    const textoP = p.innerHTML;
+
+    //Se for a tag p certa, recorta dela apenas o texto referente ao endereco
+    if (textoP.includes("Endereço:") || textoP.includes("Locais:")) {
+      const inicio = textoP.indexOf("</strong>") + 9;
+
+      let endereco = textoP.slice(inicio, textoP.length).trim();
+      endereco = `${endereco} em ${nomeCidade}`;
+
+      // Abre o google maps com o endereço
+      window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(endereco)}`, "_blank");
+    }
+  });
 }
