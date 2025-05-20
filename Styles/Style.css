@@ -250,6 +250,14 @@ button:hover {
   color: white;
 }
 
+.aba:hover {
+  background-color: #e0e0e0;
+}
+
+.aba.ativa:hover {
+  background-color: #0055aa;
+}
+
 #servicos {
   height: 88%;
 }
@@ -273,7 +281,7 @@ button:hover {
 }
 
 .cartao h3 {
-  color: #003c50;
+  color: #093640;
   font-size: 16px;
   margin-bottom: 10px;
 }
@@ -281,6 +289,10 @@ button:hover {
 .cartao p {
   font-size: 14px;
   margin: 5px 0;
+}
+
+.cartao strong, .cartao i {
+  color: #003c50;
 }
 
 .acoes {
@@ -298,6 +310,10 @@ button:hover {
   padding: 6px 12px;
   font-size: 13px;
   cursor: pointer;
+}
+
+.btn-secundario:hover {
+  background-color: #e0e0e0;
 }
 
 .btn-primario {
