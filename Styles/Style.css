@@ -399,7 +399,7 @@ button:hover {
 
 @media (max-width: 930px) {
   .container {
-    width: 60%;
+    width: 100%;
   }
 
   .grade-servicos {
